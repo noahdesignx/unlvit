@@ -1,0 +1,123 @@
+<!--Noah Mitchell and Chris D-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:image" content = "images/ITLogo.jpeg">
+        <meta property = "og:description" content = "Dual Enrollment, IT Credentials, & Employment Opportunity. Apply Now!">
+        <link rel = "icon" href = "images/ITLogo.jpeg">
+        <title>UNLV IT Workforce Talent Pipeline Program</title>
+        <link rel = "stylesheet" href = "style.css">
+        <script defer src = "animate.js"></script>
+        <script src="https://kit.fontawesome.com/d6414831a3.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+
+    <!--Navigation Bar-->
+    <nav>
+        <section class = "location">
+            <a href = "https://www.unlv.edu/"><img src = "images/unlvLogo.jpg">
+                <p>UNIVERSITY OF NEVADA, LAS VEGAS</p></a>
+        </section>
+    
+        <section class = "nav">
+            <a href = "index.html"><img src = "images/ITLogoTransparent.png"></a>
+            <div class = "links" id = "links">
+                <i class = "fa fa-times" onClick = "hideMenu()"></i>
+                <ul>
+                    <a href = "index.html"><li>Home</li></a>
+                    <a href = "about.html"><li>About</li></a>
+                    <a href = "events.html"><li>Events</li></a>
+                    <a href = "team.html"><li>Team</li></a>
+                    <a href = "sponsors.html"><li>Sponsors</li></a>
+                    <a href = "apply.html"><li>How to Apply</li></a>
+                    <a href = "highlights.html"><li>Student Highlights</li></a>
+                    <a href = "contact.html" class = "active"><li>Contact</li></a>
+                </ul>
+            </div>
+            <i class = "fa fa-bars" onClick = "showMenu()"></i>
+        </section>
+    </nav>
+
+    <!--Responsive Menu Functionality-->
+    <script>
+        var navLinks = document.getElementById("links");
+        var header = doucment.getElementById("header");
+
+        function showMenu() {
+            navLinks.style.right = "0px";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+    <!--Header-->
+    <section class = "contactHeader" id = "header">
+
+            <h1>Contact</h1>
+        
+    </section>
+
+    <!--Contact-->
+    <section class = "contact">
+
+        <form class = "contactForm" action = "contact.php" method = "POST">
+
+            <h1><i class = "fa fa-envelope"></i> itworkforce@unlv.edu</h1>
+
+            <input type = "text" name = "First Name" placeholder="First Name" required>
+            <input type = "text" name = "Last Name" placeholder="Last Name" required>
+            <input type = "email" name = "Email" placeholder="Email" required>
+            <textarea type = "text" name = "Message" placeholder="Message" required></textarea><br>
+            <button type = "submit" class = "submitForm">Send <i class = "fa fa-paper-plane-o"></i></button>
+
+        </form>
+
+        <div class = "unlvMAP">
+            <h1><i class = "fa fa-map-marker"></i> University of Nevada, Las Vegas</h1>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3223.4252618631094!2d-115.14610012432424!3d36.107495972452725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c501997ee05f%3A0xe38117c11c6f42c6!2sUniversity%20of%20Nevada%2C%20Las%20Vegas!5e0!3m2!1sen!2sus!4v1704591103011!5m2!1sen!2sus" width="75%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+        
+    </section>
+
+    <!--Footer-->
+    <section class = "footer">
+
+        <div class = "university">
+            <p>University of Nevada, Las Vegas</p><br>
+            <p>4505 S. Maryland Pkwy.</p><br>
+            <p>Las Vegas, NV 89154</p>
+        </div>
+
+        <div class = "copyright">
+            <p>itworkforce@unlv.edu</p><br>
+            <p><i class = "fa fa-copyright"></i> 2024 UNLV IT Workforce Talent Pipeline Program</p><br>
+            <p>Produced by Noah Mitchell and Christopher Dugan</p>
+        </div>
+
+        <div class = "social-media">
+            <p>Follow UNLV</p><br><br><br>
+            <a href = "https://www.facebook.com/OfficialUNLV"><i class = "fa fa-facebook"></i></a>
+            <a href = "https://www.instagram.com/unlv"><i class = "fa fa-instagram"></i></a>
+            <a href = "https://twitter.com/UNLV"><i class = "fa fa-twitter"></i></a>
+            <a href = "https://www.youtube.com/user/UNLV"><i class = "fa fa-youtube"></i></a>
+        </div>
+        
+    </section>
+
+    
+
+
+
+
+
+
+
+
+</body>
+</html>
